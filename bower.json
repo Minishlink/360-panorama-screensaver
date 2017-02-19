@@ -1,0 +1,40 @@
+{
+  "name": "panorama-screensaver",
+  "homepage": "https://github.com/Minishlink/panorama-screensaver",
+  "authors": [
+    "Louis Lagrange <lagrange.louis@gmail.com>"
+  ],
+  "description": "macOS Screen Saver for 360° Panorama / Photo Sphere shots",
+  "main": "",
+  "keywords": [
+    "macos",
+    "mac",
+    "os",
+    "x",
+    "screensaver",
+    "screen",
+    "saver",
+    "360",
+    "degrees",
+    "panorama",
+    "photosphere",
+    "photo",
+    "sphere",
+    "shot",
+    "picture"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "PanoramaWebView/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Photo-Sphere-Viewer": "^3.2.2",
+    "three.js-examples": "^0.84.0"
+  }
+}
