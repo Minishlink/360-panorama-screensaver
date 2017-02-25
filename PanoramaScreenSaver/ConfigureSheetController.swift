@@ -10,8 +10,10 @@ import ScreenSaver
 
 class ConfigureSheetController: NSObject {
     static var sharedInstance = ConfigureSheetController()
-    
+    var defaultsManager = DefaultsManager()
+
     @IBOutlet var window: NSWindow!
+    @IBOutlet var performanceRatioSlider: NSSlider?
     
     override init()
     {
@@ -19,6 +21,12 @@ class ConfigureSheetController: NSObject {
         
         let myBundle = Bundle(for: ConfigureSheetController.self)
         myBundle.loadNibNamed("ConfigureSheet", owner: self, topLevelObjects: nil)
+        
+        performanceRatioSlider!.floatValue = Float(defaultsManager.performanceRatio)
+    }
+    
+    @IBAction func updateDefaults(sender: AnyObject) {
+        defaultsManager.performanceRatio = CGFloat(performanceRatioSlider!.floatValue)
     }
     
     @IBAction func closeConfigureSheet(_ sender: NSButton)
