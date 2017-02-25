@@ -18,6 +18,10 @@
 		FF5E60471E622173005845B7 /* thumbnail@4x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF5E60441E622173005845B7 /* thumbnail@4x.png */; };
 		FF69C57E1E623B6C00838988 /* DefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF69C57D1E623B6C00838988 /* DefaultsManager.swift */; };
 		FF69C57F1E623B6C00838988 /* DefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF69C57D1E623B6C00838988 /* DefaultsManager.swift */; };
+		FF69C5811E623D3400838988 /* ConfigureSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF69C5801E623D3400838988 /* ConfigureSheetController.swift */; };
+		FF69C5821E623D3500838988 /* ConfigureSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF69C5801E623D3400838988 /* ConfigureSheetController.swift */; };
+		FF69C5841E623D7700838988 /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF69C5831E623D7700838988 /* ConfigureSheet.xib */; };
+		FF69C5851E623D7700838988 /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF69C5831E623D7700838988 /* ConfigureSheet.xib */; };
 		FFDC68F81E5A12E600FFA935 /* PanoramaScreenSaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDC68F71E5A12E600FFA935 /* PanoramaScreenSaverView.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +36,8 @@
 		FF5E60431E622173005845B7 /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@2x.png"; sourceTree = "<group>"; };
 		FF5E60441E622173005845B7 /* thumbnail@4x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@4x.png"; sourceTree = "<group>"; };
 		FF69C57D1E623B6C00838988 /* DefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultsManager.swift; sourceTree = "<group>"; };
+		FF69C5801E623D3400838988 /* ConfigureSheetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureSheetController.swift; sourceTree = "<group>"; };
+		FF69C5831E623D7700838988 /* ConfigureSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigureSheet.xib; sourceTree = "<group>"; };
 		FFDC68EA1E5A12B300FFA935 /* PanoramaScreenSaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PanoramaScreenSaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFDC68F11E5A12B300FFA935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFDC68F71E5A12E600FFA935 /* PanoramaScreenSaverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanoramaScreenSaverView.swift; sourceTree = "<group>"; };
@@ -94,6 +100,8 @@
 				FFDC68F11E5A12B300FFA935 /* Info.plist */,
 				FFDC68F71E5A12E600FFA935 /* PanoramaScreenSaverView.swift */,
 				FF69C57D1E623B6C00838988 /* DefaultsManager.swift */,
+				FF69C5801E623D3400838988 /* ConfigureSheetController.swift */,
+				FF69C5831E623D7700838988 /* ConfigureSheet.xib */,
 			);
 			path = PanoramaScreenSaver;
 			sourceTree = "<group>";
@@ -193,6 +201,7 @@
 			files = (
 				FF054ECB1E5A304E00EC31DD /* PanoramaWebView in Resources */,
 				FF054EC21E5A1F3200EC31DD /* Assets.xcassets in Resources */,
+				FF69C5851E623D7700838988 /* ConfigureSheet.xib in Resources */,
 				FF054EC51E5A1F3200EC31DD /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,6 +214,7 @@
 				FF054EB81E5A199D00EC31DD /* PanoramaWebView in Resources */,
 				FF5E60461E622173005845B7 /* thumbnail@2x.png in Resources */,
 				FF5E60471E622173005845B7 /* thumbnail@4x.png in Resources */,
+				FF69C5841E623D7700838988 /* ConfigureSheet.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF69C5821E623D3500838988 /* ConfigureSheetController.swift in Sources */,
 				FF054ECA1E5A1F9C00EC31DD /* PanoramaScreenSaverView.swift in Sources */,
 				FF69C57F1E623B6C00838988 /* DefaultsManager.swift in Sources */,
 				FF054EC01E5A1F3200EC31DD /* AppDelegate.swift in Sources */,
@@ -226,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFDC68F81E5A12E600FFA935 /* PanoramaScreenSaverView.swift in Sources */,
+				FF69C5811E623D3400838988 /* ConfigureSheetController.swift in Sources */,
 				FF69C57E1E623B6C00838988 /* DefaultsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
