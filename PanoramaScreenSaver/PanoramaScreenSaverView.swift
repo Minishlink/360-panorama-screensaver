@@ -10,6 +10,7 @@ import ScreenSaver
 import WebKit
 
 class PanoramaScreenSaverView: ScreenSaverView {
+    var defaultsManager: DefaultsManager = DefaultsManager()
     var webView: WKWebView!
     
     override init?(frame: NSRect, isPreview: Bool) {
@@ -42,7 +43,7 @@ class PanoramaScreenSaverView: ScreenSaverView {
     }
     
     func initFrame (frame: NSRect) {
-        let performanceRatio = CGFloat(0.7)
+        let performanceRatio = defaultsManager.performanceRatio
         let newFrame = CGRect(x: 0, y: 0, width: frame.width*performanceRatio, height: frame.height*performanceRatio)
         // alternate monitors have a frame where the origin is not set to 0 by default
         self.scaleUnitSquare(to: NSMakeSize(1/performanceRatio, 1/performanceRatio))
