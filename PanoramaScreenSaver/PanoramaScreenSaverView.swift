@@ -22,11 +22,7 @@ class PanoramaScreenSaverView: ScreenSaverView {
         }
         
         if (frame.width != 0) {
-            let ratioPerformance = CGFloat(1.25);
-            let newFrame = CGRect(x: 0, y: 0, width: frame.width/ratioPerformance, height: frame.height/ratioPerformance);
-            // alternate monitors have a frame where the origin is not set to 0 by default
-            self.scaleUnitSquare(to: NSMakeSize(ratioPerformance, ratioPerformance))
-            initWebView(frame: newFrame);
+            initFrame(frame: frame)
         }
     }
     
@@ -45,9 +41,17 @@ class PanoramaScreenSaverView: ScreenSaverView {
         webView.load(URLRequest(url: url))
     }
     
+    func initFrame (frame: NSRect) {
+        let performanceRatio = CGFloat(0.7)
+        let newFrame = CGRect(x: 0, y: 0, width: frame.width*performanceRatio, height: frame.height*performanceRatio)
+        // alternate monitors have a frame where the origin is not set to 0 by default
+        self.scaleUnitSquare(to: NSMakeSize(1/performanceRatio, 1/performanceRatio))
+        initWebView(frame: newFrame)
+    }
+    
     override func viewWillMove(toSuperview newSuperview: NSView?) {
         #if APP
-        initWebView(frame: (newSuperview?.frame)!)
+            initFrame(frame: (newSuperview?.frame)!)
         #endif
     }
     
