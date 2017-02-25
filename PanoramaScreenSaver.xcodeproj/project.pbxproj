@@ -13,6 +13,9 @@
 		FF054EC51E5A1F3200EC31DD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF054EC31E5A1F3200EC31DD /* MainMenu.xib */; };
 		FF054ECA1E5A1F9C00EC31DD /* PanoramaScreenSaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDC68F71E5A12E600FFA935 /* PanoramaScreenSaverView.swift */; };
 		FF054ECB1E5A304E00EC31DD /* PanoramaWebView in Resources */ = {isa = PBXBuildFile; fileRef = FF054EB71E5A199D00EC31DD /* PanoramaWebView */; };
+		FF5E60451E622173005845B7 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = FF5E60421E622173005845B7 /* thumbnail.png */; };
+		FF5E60461E622173005845B7 /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF5E60431E622173005845B7 /* thumbnail@2x.png */; };
+		FF5E60471E622173005845B7 /* thumbnail@4x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF5E60441E622173005845B7 /* thumbnail@4x.png */; };
 		FFDC68F81E5A12E600FFA935 /* PanoramaScreenSaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDC68F71E5A12E600FFA935 /* PanoramaScreenSaverView.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +26,9 @@
 		FF054EC11E5A1F3200EC31DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF054EC41E5A1F3200EC31DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		FF054EC61E5A1F3200EC31DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF5E60421E622173005845B7 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
+		FF5E60431E622173005845B7 /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@2x.png"; sourceTree = "<group>"; };
+		FF5E60441E622173005845B7 /* thumbnail@4x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@4x.png"; sourceTree = "<group>"; };
 		FFDC68EA1E5A12B300FFA935 /* PanoramaScreenSaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PanoramaScreenSaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFDC68F11E5A12B300FFA935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFDC68F71E5A12E600FFA935 /* PanoramaScreenSaverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanoramaScreenSaverView.swift; sourceTree = "<group>"; };
@@ -79,6 +85,9 @@
 		FFDC68EC1E5A12B300FFA935 /* PanoramaScreenSaver */ = {
 			isa = PBXGroup;
 			children = (
+				FF5E60421E622173005845B7 /* thumbnail.png */,
+				FF5E60431E622173005845B7 /* thumbnail@2x.png */,
+				FF5E60441E622173005845B7 /* thumbnail@4x.png */,
 				FFDC68F11E5A12B300FFA935 /* Info.plist */,
 				FFDC68F71E5A12E600FFA935 /* PanoramaScreenSaverView.swift */,
 			);
@@ -188,7 +197,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF5E60451E622173005845B7 /* thumbnail.png in Resources */,
 				FF054EB81E5A199D00EC31DD /* PanoramaWebView in Resources */,
+				FF5E60461E622173005845B7 /* thumbnail@2x.png in Resources */,
+				FF5E60471E622173005845B7 /* thumbnail@4x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +401,7 @@
 				FF054EC91E5A1F3200EC31DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FFDC68E41E5A12B300FFA935 /* Build configuration list for PBXProject "PanoramaScreenSaver" */ = {
 			isa = XCConfigurationList;
