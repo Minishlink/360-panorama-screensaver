@@ -7,7 +7,7 @@
 ## Install
 
 It's only a proof of concept right now, so you'll have to build the screen saver in order to change the images.
-Let me know in an issue if you want to be able to change the files more easily ;)
+Let me know in an issue if you want to be able to change the files more easily ;) (add a Thumbs up vote on [issue #2](https://github.com/Minishlink/360-panorama-screensaver/issues/2))
 
 * First, setup the project:
 ```bash
