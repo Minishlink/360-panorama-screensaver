@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const DURATION_TRANSITION = 2000; // ms
   const FOV = 65;
 
-  var panoramas = shuffle([
+  const panoramas = shuffle([
     '/Users/louislagrange/Pictures/Spheres/PANO_20160704_073208_6.jpg',
     '/Users/louislagrange/Pictures/Spheres/PANO_20160704_080828_8.jpg',
     '/Users/louislagrange/Pictures/Spheres/PANO_20160704_111457_0.jpg',
@@ -32,15 +32,15 @@ document.addEventListener("DOMContentLoaded", function() {
     '/Users/louislagrange/Pictures/Spheres/PANO_20160720_110009_0.jpg',
     '/Users/louislagrange/Pictures/Spheres/PANO_20160723_095315_2.jpg',
   ]);
-  var currentPanoramaIndex = -1;
+  let currentPanoramaIndex = -1;
   function nextPanorama() {
-    if (++currentPanoramaIndex == panoramas.length) {
+    if (++currentPanoramaIndex === panoramas.length) {
       currentPanoramaIndex = 0;
     }
     return panoramas[currentPanoramaIndex];
   }
 
-  var viewer = new PhotoSphereViewer({
+  const viewer = new PhotoSphereViewer({
     container: 'photosphere',
     panorama: nextPanorama(),
     default_fov: FOV,
